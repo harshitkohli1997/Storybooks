@@ -1,5 +1,5 @@
 const express = require('express');
-const path = require('path');
+const path= require('path');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
@@ -81,7 +81,7 @@ app.use('/', index);
 app.use('/auth', auth);
 app.use('/stories',stories);
 
-
+//port for deployment
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
