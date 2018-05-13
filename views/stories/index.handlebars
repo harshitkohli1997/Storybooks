@@ -5,7 +5,7 @@
       <div class="card">
         <div class="card-image">
           {{#if user}}
-            {{{editIcon story.user.id user.id story.id false}}}
+            {{{editIcon user.id ../user.id id}}}
           {{/if}}
         </div>
         <div class="card-content center-align">
@@ -14,7 +14,7 @@
           <br>
           <div class="chip">
             <img src="{{user.image}}">
-            {{user.firstName}} {{user.lastName}}
+            <a href="/stories/user/{{user.id}}">{{user.firstName}} {{user.lastName}}</a>
           </div>
         </div>
         <div class="card-action center-align">
